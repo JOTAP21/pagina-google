@@ -8,36 +8,38 @@
 <body>
     <style>
         body{
-            width: 100%;
+            overflow: hidden;
         }
         a{
             text-decoration: none;
             color: black;
         }
+        .imagens:hover{
+            color: yellowgreen;
+        }
+        .gmail:hover{
+            color: yellowgreen;
+        }
+        .principal{
+            text-align: end;
+            margin-right: 2%;
+        }
+
         .gmail{
-            margin-left: 75%;
+            padding: 3px;
         }
         .gmail{
             padding: 3px;
-            margin-right: 10px;
         }
         .imagens{
-            padding: 5px;
-            margin-right: 10px;
-        }
-        .menu{    
             padding: 3px;
-            margin-right: 10px;
+        }
+        .menu{  
+            padding: 3px;
         }
         .botao-entrar{
-            background-color: rgb(87, 87, 233);
-            color: white;
-            width: 60px;
-            height: 25px;
-            border: none;
             padding: 3px;
-            margin-right: 10px;
-        }
+        } 
         button:hover{
             color: yellow;
             background-color: green;
@@ -52,7 +54,7 @@
         }
         input{
             border-radius: 10px;
-            width: 550px;
+            width: 50%;
             height: 40px;
         }
         .input{
@@ -64,17 +66,14 @@
         }
         button{
             color: black;
-            width: 150px;
+            width: 20%;
             height: 30px;
             margin-top: 20px;
             border: none;
         }
         footer{
-            height: 400px;
+            min-height: 100vh;
             background-color: #ccc;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
         }
         .brasil{
             padding-top: 1px;
@@ -87,7 +86,7 @@
             gap: 20px; /* Adiciona um espaco entre os links */
         }
     </style>  
-    <main>
+    <main class="principal">
         <a class="gmail" href="https://workspace.google.com/intl/pt-BR/gmail/">Gmail</a>
         <a class="imagens" href="https://images.google.com/?hl=pt-br">Imagens</a>
         <img class="menu" src="imagens/menu.png" width="20px" alt="menu">
